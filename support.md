@@ -1,10 +1,10 @@
 ---
-title: Support — Service Ledger
+title: Support — Car Service Dashboard
 ---
 
 # Support & FAQ
 
-**Service Ledger (Car Service Dashboard)** is an independent application for tracking vehicle maintenance and expenses. For assistance, common questions, or bug reports, please consult the guide below.
+**Car Service Dashboard** is an independent application for tracking vehicle maintenance and expenses. For assistance, common questions, or bug reports, please consult the guide below.
 
 ---
 
@@ -23,11 +23,11 @@ When filing a bug report, please include:
 
 ## Frequently Asked Questions (FAQ)
 
-### Does Service Ledger require an account or subscription?
-**No.** Service Ledger requires zero user accounts, zero logins, and zero recurring subscription fees. It operates directly on your Apple devices and syncs through your existing iCloud account.
+### Does Car Service Dashboard require an account or subscription?
+**No.** Car Service Dashboard requires zero user accounts, zero logins, and zero recurring subscription fees. It operates directly on your Apple devices and syncs through your existing iCloud account.
 
 ### How does iCloud sync work between my Mac and iPhone?
-Service Ledger uses Apple's native iCloud Drive Ubiquity Container. As long as both devices are signed in to the same Apple ID with iCloud Drive enabled:
+Car Service Dashboard uses Apple's native iCloud Drive Ubiquity Container. As long as both devices are signed in to the same Apple ID with iCloud Drive enabled:
 - Your service history ledger (`CarServiceData.json`) synchronizes automatically in the background.
 - Any attached receipt PDFs or scanned camera documents in your `Receipts/` folder replicate automatically across your devices.
 - File coordination (`NSFileCoordinator`) and automatic conflict resolution ensure changes merge cleanly even if you edit records offline.

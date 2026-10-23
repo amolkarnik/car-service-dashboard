@@ -1,12 +1,12 @@
 ---
-title: Privacy Policy — Service Ledger
+title: Privacy Policy — Car Service Dashboard
 ---
 
 # Privacy Policy
 
 **Effective Date:** October 2026
 
-**Service Ledger (Car Service Dashboard)** ("the App") is a native iOS and macOS application designed to help vehicle owners track service visits, maintenance records, and repair costs. Your automotive records, financial figures, and receipts are deeply personal, and the App is engineered from the ground up to keep your data completely private.
+**Car Service Dashboard** ("the App") is a native iOS and macOS application designed to help vehicle owners track service visits, maintenance records, and repair costs. Your automotive records, financial figures, and receipts are deeply personal, and the App is engineered from the ground up to keep your data completely private.
 
 ---
 
@@ -30,7 +30,7 @@ All document processing, optical character recognition (OCR), text summarization
 ## Data Storage & iCloud Synchronization
 
 - **On-Device Storage:** Your vehicle records and receipt files are stored locally in your sandboxed application directory using standard, human-readable JSON (`CarServiceData.json`) and standard PDF files.
-- **iCloud Drive Ubiquity Sync:** When iCloud is enabled on your Apple device, the App synchronizes your service ledger and receipt attachments seamlessly across your Mac, iPhone, and iPad using Apple's official iCloud Ubiquity container (`iCloud.com.amolkarnik.CarServiceDashboard`).
+- **iCloud Drive Ubiquity Sync:** When iCloud is enabled on your Apple device, the App synchronizes your records and receipt attachments seamlessly across your Mac, iPhone, and iPad using Apple's official iCloud Ubiquity container (`iCloud.com.amolkarnik.CarServiceDashboard`).
   - All sync operations are governed by Apple's end-to-end security protocols and tied directly to your personal Apple ID.
   - The developer cannot access, read, or recover your iCloud data.
 - **System API Declarations:** In compliance with Apple guidelines, our system usage of `UserDefaults` for lightweight appearance and color preferences is declared under reason code `CA92.1`. No tracking identifiers are stored.
@@ -65,5 +65,5 @@ If this policy is revised, updates will be published at this same URL with an up
 
 ## Contact & Questions
 
-If you have questions about this Privacy Policy or Service Ledger, please open an issue on our public issue tracker:  
+If you have questions about this Privacy Policy or Car Service Dashboard, please open an issue on our public issue tracker:  
 <https://github.com/amolkarnik/car-service-dashboard/issues>

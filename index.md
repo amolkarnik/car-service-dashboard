@@ -1,12 +1,12 @@
 ---
-title: Service Ledger — Private Automotive Maintenance Dashboard
+title: Car Service Dashboard — Private Automotive Maintenance Dashboard
 ---
 
-# Service Ledger
+# Car Service Dashboard
 
 A fast, tactile, and completely private **iOS and macOS application** for organizing vehicle service records, tracking repair costs, and preserving maintenance history.
 
-Stop digging through gloveboxes, paper folders, and dealer PDFs. Service Ledger transforms cluttered invoices into an interactive, chronological timeline with rich spend analytics and on-device search.
+Stop digging through gloveboxes, paper folders, and dealer PDFs. Car Service Dashboard transforms cluttered invoices into an interactive, chronological timeline with rich spend analytics and on-device search.
 
 ---
 
@@ -47,4 +47,4 @@ Stop digging through gloveboxes, paper folders, and dealer PDFs. Service Ledger 
 
 ---
 
-*Service Ledger is an independent application. All vehicle manufacturer trademarks are the property of their respective owners and are used purely for vehicle identification purposes.*
+*Car Service Dashboard is an independent application. All vehicle manufacturer trademarks are the property of their respective owners and are used purely for vehicle identification purposes.*

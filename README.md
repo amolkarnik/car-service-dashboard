@@ -1,6 +1,6 @@
-# Service Ledger (Public Pages & Support Repository)
+# Car Service Dashboard (Public Pages & Support Repository)
 
-This public repository hosts the official GitHub Pages landing page, privacy policy, and support documentation for **Service Ledger (Car Service Dashboard)**, a private native Apple application for tracking vehicle service history, maintenance records, and repair expenses on iOS and macOS.
+This public repository hosts the official GitHub Pages landing page, privacy policy, and support documentation for **Car Service Dashboard**, a private native Apple application for tracking vehicle service history, maintenance records, and repair expenses on iOS and macOS.
 
 ---
 
