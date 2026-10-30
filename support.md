@@ -49,8 +49,11 @@ On iOS:
 If you have accumulated years of PDF invoices in a folder:
 1. In the **Timeline** toolbar menu on macOS, select **"Import Folder (Batch Invoices)..."**.
 2. Select your folder of repair PDFs.
-3. The app scans and processes invoices concurrently on-device, automatically matching invoices to cars in your garage, filtering dealership noise, and flagging potential duplicates.
+3. The app extracts invoice text on-device, matches invoices to cars in your garage where it can, filters dealership noise, and flags potential duplicates. AI summaries may use Apple Private Cloud Compute when needed unless **On-device only** is enabled.
 4. Review the itemized summary and tap **Import** to merge the records into your ledger.
+
+### Can I keep invoice summaries entirely on-device?
+Yes. Enable **Settings → Invoice AI Processing → On-device only**. Apple Private Cloud Compute is enabled by default as a fallback for invoice summaries when local generation cannot complete. That fallback may send cleaned invoice text and known garage provider names to Apple; it does not send the PDF or scanned images through this route. With **On-device only** enabled, an invoice that cannot be summarized locally receives a rules-based summary. See the [Privacy Policy](privacy.html) for details.
 
 ### Where is my data stored? Can I access or back it up manually?
 Yes. Your data is never trapped in a proprietary database:

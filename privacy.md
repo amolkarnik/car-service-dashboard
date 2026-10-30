@@ -2,68 +2,47 @@
 title: Privacy Policy — Car Service Dashboard
 ---
 
-# Privacy Policy
+# Privacy Policy for Car Service Dashboard
 
-**Effective Date:** October 2026
+**Last Updated:** October 2026
 
-**Car Service Dashboard** ("the App") is a native iOS and macOS application designed to help vehicle owners track service visits, maintenance records, and repair costs. Your automotive records, financial figures, and receipts are deeply personal, and the App is engineered from the ground up to keep your data completely private.
+Car Service Dashboard is an independent vehicle maintenance and expense tracking application developed by Amol Karnik for iOS and macOS. The developer does not collect or receive your garage records, and the application contains no developer analytics or telemetry. Some Apple platform services described below may process or sync data when you use them.
 
----
+## 1. Invoice Processing and Apple Private Cloud Compute
 
-## Executive Summary
+Invoice text extraction, OCR, and cleanup run on your device. Invoice summaries use Apple Foundation Models on-device when available. Apple Private Cloud Compute (PCC) is enabled by default as a fallback when an on-device summary cannot fit the model's context limit or local generation fails.
 
-**The App collects zero personal data, includes zero analytics or telemetry SDKs, displays zero advertisements, and operates zero external servers.** 
+When that fallback is used, the app may send the cleaned invoice text and known garage provider names included in the summary prompt to Apple's PCC service. The app sends this text for summarization; the invoice PDF or scanned page images are not sent through this invoice-summary route. Apple processes PCC requests under Apple's privacy and security practices. The developer does not receive the request or its response.
 
-All document processing, optical character recognition (OCR), text summarization, and data storage occur strictly on your personal Apple devices and within your private iCloud Drive storage.
+You can prevent invoice-summary PCC requests in **Settings → Invoice AI Processing → On-device only**. This preference is off by default, so PCC remains enabled when needed. With **On-device only** enabled, summaries remain on-device when Apple Intelligence can complete them; otherwise the app falls back to its rules-based summary. The preference is stored in the app's local settings.
 
----
+## 2. Other Processing and Diagnostics
 
-## What We Do Not Do
+The app uses Apple's Vision and VisionKit frameworks for on-device document text recognition and scanning. Search uses a local SQLite index and on-device embeddings. Ask Assistant uses the app's local search and Apple's Foundation Models framework; the invoice-summary PCC preference described above applies to invoice summaries.
 
-- We do **not** collect, store, or transmit your name, email, IP address, device identifier, VIN, license plate, or vehicle service history.
-- We do **not** integrate third-party tracking pixels, advertising frameworks, or telemetry tools.
-- We do **not** operate any proprietary cloud server, database, or API backend.
-- We do **not** sell, license, share, or monetize any user data whatsoever.
+The application does not include third-party analytics, advertising, or tracking SDKs and does not send garage data to a developer-operated server. Crash reports or diagnostics collected by Apple are governed by your device settings and Apple's policies.
 
----
+## 3. Storage and iCloud Synchronization
 
-## Data Storage & iCloud Synchronization
+With the built-in storage location, vehicle records and attached invoice PDFs are stored in the app's Application Support area. You may instead choose a custom folder, whose storage and sync behavior depends on that location.
 
-- **On-Device Storage:** Your vehicle records and receipt files are stored locally in your sandboxed application directory using standard, human-readable JSON (`CarServiceData.json`) and standard PDF files.
-- **iCloud Drive Ubiquity Sync:** When iCloud is enabled on your Apple device, the App synchronizes your records and receipt attachments seamlessly across your Mac, iPhone, and iPad using Apple's official iCloud Ubiquity container (`iCloud.com.amolkarnik.CarServiceDashboard`).
-  - All sync operations are governed by Apple's end-to-end security protocols and tied directly to your personal Apple ID.
-  - The developer cannot access, read, or recover your iCloud data.
-- **System API Declarations:** In compliance with Apple guidelines, our system usage of `UserDefaults` for lightweight appearance and color preferences is declared under reason code `CA92.1`. No tracking identifiers are stored.
+When iCloud is available and enabled for the app, the vehicle ledger and attached invoice PDFs in the app's iCloud container can sync across your Apple devices through Apple's iCloud services. The developer does not have access to your iCloud account or container. Search indices remain in local app storage and are not part of this sync.
 
----
+## 4. Hardware Permissions
 
-## Document Scanning & Optical Processing
+The app requests camera access on iOS when you choose **Scan Receipt**. The camera is used to capture a paper invoice and create a PDF attachment in your selected garage storage location.
 
-- **Camera Scanner (iOS):** The App uses Apple's native VisionKit framework (`VNDocumentCameraViewController`) for scanning physical paper invoices. Document edge detection, perspective correction, and image processing happen 100% on-device in memory.
-- **Text & VIN Extraction:** OCR text extraction uses Apple's native `PDFKit` and `Vision` frameworks on your device. Scanned images and PDF receipts are saved directly to your local receipt directory or iCloud Drive container. No documents are ever sent to remote processing servers.
+## 5. Local Preferences
 
----
+The app stores preferences with `UserDefaults`, including appearance choices and the **On-device only** invoice AI preference.
 
-## On-Device Artificial Intelligence
+## 6. Third-Party Links
 
-- **Apple Intelligence Integration:** The App utilizes Apple's native on-device `FoundationModels` framework (`SystemLanguageModel` and `LanguageModelSession`) for invoice summarization and conversational assistance.
-- All AI processing executes locally on Apple Silicon neural engines. Your invoices, prompts, and service notes are never transmitted to external cloud LLM providers.
+Links to the App Store, support site, or developer repository open external services governed by their own privacy policies.
 
----
+## 7. Contact
 
-## Children's Privacy
-
-The App does not collect any data from anyone of any age. It is rated **4+** (Made for Everyone).
-
----
-
-## Changes to This Policy
-
-If this policy is revised, updates will be published at this same URL with an updated effective date. Because the App operates with zero data collection, any future changes will maintain or narrow this strict privacy standard.
-
----
-
-## Contact & Questions
-
-If you have questions about this Privacy Policy or Car Service Dashboard, please open an issue on our public issue tracker:  
-<https://github.com/amolkarnik/car-service-dashboard/issues>
+- **Developer:** Amol Karnik
+- **Email:** amol.m.karnik@gmail.com
+- **Support:** https://amolkarnik.github.io/car-service-dashboard/support
+- **Website:** https://amolkarnik.github.io/car-service-dashboard/
