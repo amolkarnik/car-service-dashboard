@@ -34,17 +34,19 @@ Stop digging through gloveboxes, paper folders, and dealer PDFs. Car Service Das
   - **6-Tier Vehicle Matching:** Intelligently attributes invoices to vehicles via VIN, license plate, and make/model tokens.
   - **Intelligent Deduplication:** Auto-heals and prevents duplicate visits within batches and across your garage.
 
-- **Private Invoice AI with Cloud Control:**
-  - Uses Apple's Foundation Models on-device for invoice summaries, with Apple Private Cloud Compute enabled by default as a fallback when needed. This fallback sends cleaned invoice text and known garage provider names to Apple, rather than the PDF or scanned images.
-  - Turn on **Settings → Invoice AI Processing → On-device only** to prevent invoice-summary cloud requests. If local AI cannot complete a summary, the app uses a rules-based summary.
-  - Built-in conversational Assistant uses local search and Apple Foundation Models to answer questions about your service history.
+- **Invoice AI on your device:**
+  - Invoice summaries use Apple's Foundation Models on your device when available, with a rules-based summary as a fallback. In this release, invoices are not sent to Apple Private Cloud Compute.
+
+- **Ask about your garage:**
+  - Ask questions such as "When was my last oil change, and what did it cost?" Apple Private Cloud Compute answers, and each answer lists the visits it used.
+  - Ask is off until you turn it on. It sends your question and the selected vehicles' visit dates, costs, odometer readings, service providers, service descriptions and spending totals. It does not send VINs, license plates, receipts or files. See the [Privacy Policy](privacy.html).
 
 - **Seamless iCloud Ubiquity Sync:**
   - Background synchronization between your Mac, iPhone, and iPad using Apple's official iCloud Drive Ubiquity Container.
   - Human-readable open JSON storage format (`CarServiceData.json`) and standard PDF attachments. Zero proprietary database lock-in.
 
 - **100% Private by Design:**
-  - Zero user accounts, zero logins, zero tracking pixels, and zero third-party telemetry. OCR and search indexing run locally. Optional invoice-summary processing through Apple Private Cloud Compute is described in the [Privacy Policy](privacy.html); the developer does not receive your garage data.
+  - Zero user accounts, zero logins, zero tracking pixels, and zero third-party telemetry. OCR and search indexing run on your device. Ask uses Apple Private Cloud Compute only after you turn it on, as described in the [Privacy Policy](privacy.html). The developer does not receive your garage data.
 
 ---
 
