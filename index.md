@@ -1,53 +1,44 @@
 ---
-title: Car Service Dashboard — Private Automotive Maintenance Dashboard
+title: Car Service Dashboard
 ---
 
 # Car Service Dashboard
 
-A fast, tactile, and completely private **iOS and macOS application** for organizing vehicle service records, tracking repair costs, and preserving maintenance history.
+Car Service Dashboard keeps your car's service history, receipts and spending in one place, on iPhone, iPad and Mac. You can scan or import your service invoices, see what was done and when, and ask questions about your garage.
 
-Stop digging through gloveboxes, paper folders, and dealer PDFs. Car Service Dashboard transforms cluttered invoices into an interactive, chronological timeline with rich spend analytics and on-device search.
+- [Privacy policy](privacy.html)
+- [Support and questions](support.html)
+- [Report an issue on GitHub](https://github.com/amolkarnik/car-service-dashboard/issues)
 
----
+## Service history
 
-### Quick Links
-- 🔒 [Privacy Policy](privacy.html)
-- 🛠️ [Support & FAQ](support.html)
-- 🐛 [Report an Issue on GitHub](https://github.com/amolkarnik/car-service-dashboard/issues)
+- You can see every visit in order, with its date, service provider, mileage, cost, services and receipt.
+- You can look at one vehicle, or at all your vehicles together.
+- You can give each vehicle a color. Its garage card, sidebar dot, timeline badges and charts will use that color.
 
----
+## Import invoices
 
-### Key Highlights
+- On iPhone and iPad, you can scan a paper receipt with the camera. The app will find the edges, straighten the pages and save them as a PDF.
+- You can import one PDF invoice, or a whole folder of them at once.
+- You don't have to type in the details. The app will read them from the invoice on your device and match the invoice to your vehicle by VIN, license plate or make and model.
+- You check each record before anything is saved. If an invoice or visit is already in your garage, the app will tell you.
+- Where Apple Intelligence is available, you also get a short summary of each invoice, written on your device. Otherwise you get a rules-based summary. In this release, the app will not send your invoices to Apple Private Cloud Compute.
 
-- **Interactive Spend Trajectory & Multi-Car Timeline:**
-  - View your entire service history chronologically with line item details, category tags, odometer readings, and attached invoice documents.
-  - Interactive Swift Charts track repair spend trajectories over time, with automatic temporal padding and monthly trend breakdowns.
-  - Multi-car visualization colors data points and line markers by vehicle, paired with an accessible bottom legend.
+## Ask about your garage
 
-- **Vehicle Garage Customization & Theming:**
-  - Personalize each vehicle in your garage with a custom accent color using 10 curated automotive palette presets or a native fine-tuning color picker.
-  - Colors are subtly reflected across garage cards, sidebar status dots, and timeline records.
+- You can ask questions such as "When was my last oil change, and what did it cost?" Apple Private Cloud Compute answers, and you can see the visits each answer used.
+- Ask is off until you turn it on. When you ask a question, the app will send your question and, for the vehicles you have selected, each visit's date, cost, odometer reading, service provider and service descriptions, plus your spending totals. Ask does not send your VINs, license plates, receipts or files. You can read the details in the [privacy policy](privacy.html).
+- You need iOS 27 or macOS 27 and an internet connection to use Ask.
 
-- **Optical Document Ingestion (OCR):**
-  - **VisionKit Camera Scanner (iOS):** Scan multi-page physical repair receipts with automatic edge detection and perspective correction.
-  - **Batch PDF Folder Import (macOS):** Ingest entire folders of historical PDF invoices with bounded multi-worker concurrency.
-  - **6-Tier Vehicle Matching:** Intelligently attributes invoices to vehicles via VIN, license plate, and make/model tokens.
-  - **Intelligent Deduplication:** Auto-heals and prevents duplicate visits within batches and across your garage.
+## Spending
 
-- **Invoice AI on your device:**
-  - Invoice summaries use Apple's Foundation Models on your device when available, with a rules-based summary as a fallback. In this release, invoices are not sent to Apple Private Cloud Compute.
+- You can see what you have spent over time, by month and by year.
+- You can see your spending by service provider and by service category.
 
-- **Ask about your garage:**
-  - Ask questions such as "When was my last oil change, and what did it cost?" Apple Private Cloud Compute answers, and each answer lists the visits it used.
-  - Ask is off until you turn it on. It sends your question and the selected vehicles' visit dates, costs, odometer readings, service providers, service descriptions and spending totals. It does not send VINs, license plates, receipts or files. See the [Privacy Policy](privacy.html).
+## Your data
 
-- **Seamless iCloud Ubiquity Sync:**
-  - Background synchronization between your Mac, iPhone, and iPad using Apple's official iCloud Drive Ubiquity Container.
-  - Human-readable open JSON storage format (`CarServiceData.json`) and standard PDF attachments. Zero proprietary database lock-in.
+- You don't need an account, and there is no tracking or third-party analytics. The developer does not receive your garage data.
+- Your records are a readable JSON file (`CarServiceData.json`), and your receipts are standard PDF files in a `Receipts` folder. You can keep them in the app's own storage, in a folder you choose, or in your iCloud.
+- If you use iCloud, your records and receipts will sync between your iPhone, iPad and Mac.
 
-- **100% Private by Design:**
-  - Zero user accounts, zero logins, zero tracking pixels, and zero third-party telemetry. OCR and search indexing run on your device. Ask uses Apple Private Cloud Compute only after you turn it on, as described in the [Privacy Policy](privacy.html). The developer does not receive your garage data.
-
----
-
-*Car Service Dashboard is an independent application. All vehicle manufacturer trademarks are the property of their respective owners and are used purely for vehicle identification purposes.*
+*Car Service Dashboard is an independent app. Vehicle manufacturer trademarks belong to their owners and are used only to identify vehicles.*

@@ -1,74 +1,71 @@
 ---
-title: Support — Car Service Dashboard
+title: Support, Car Service Dashboard
 ---
 
-# Support & FAQ
+# Support and questions
 
-**Car Service Dashboard** is an independent application for tracking vehicle maintenance and expenses. For assistance, common questions, or bug reports, please consult the guide below.
+If you need help with Car Service Dashboard, or you want to report a problem or ask for a feature, you can [open an issue on GitHub](https://github.com/amolkarnik/car-service-dashboard/issues).
 
----
+If you're reporting a problem, please include:
 
-## Reporting a Bug or Requesting a Feature
+- your device and its iOS or macOS version (for example, iPhone 16 Pro on iOS 27);
+- the app version, which you can find in Settings;
+- the steps that lead to the problem;
+- what you expected to happen, and what happened.
 
-To report an issue or suggest an enhancement, please open a ticket on our public issue tracker:  
-👉 **[Open an Issue on GitHub](https://github.com/amolkarnik/car-service-dashboard/issues)**
+## Questions
 
-When filing a bug report, please include:
-- **Device & OS Version** (e.g. iPhone 16 Pro running iOS 27, Mac Studio running macOS 26)
-- **App Version** (found in Settings)
-- **Steps to reproduce** the issue
-- **Observed behavior vs. expected behavior**
+### Do I need an account or a subscription?
 
----
+No. You don't need an account, a sign-in or a subscription. The app works on your Apple devices and syncs through your own iCloud account.
 
-## Frequently Asked Questions (FAQ)
+### How does iCloud sync work between my iPhone and Mac?
 
-### Does Car Service Dashboard require an account or subscription?
-**No.** Car Service Dashboard requires zero user accounts, zero logins, and zero recurring subscription fees. It operates directly on your Apple devices and syncs through your existing iCloud account.
+If both devices are signed in to the same Apple Account with iCloud Drive turned on:
 
-### How does iCloud sync work between my Mac and iPhone?
-Car Service Dashboard uses Apple's native iCloud Drive Ubiquity Container. As long as both devices are signed in to the same Apple ID with iCloud Drive enabled:
-- Your service history ledger (`CarServiceData.json`) synchronizes automatically in the background.
-- Any attached receipt PDFs or scanned camera documents in your `Receipts/` folder replicate automatically across your devices.
-- File coordination (`NSFileCoordinator`) and automatic conflict resolution ensure changes merge cleanly even if you edit records offline.
+- your service records (`CarServiceData.json`) will sync in the background;
+- your receipt PDFs and scanned receipts in the `Receipts` folder will sync too;
+- if you edit records while you're offline, the app will merge your changes when your devices sync again.
 
-### How do I customize a vehicle's accent color?
-1. Open the **Home** (My Garage) tab.
-2. In the card for your car, click or tap the **colored circle dot** next to the car's name (or right-click / long-press the card and select **"Change Vehicle Color..."**).
-3. Select from 10 curated automotive preset colors (Azure Blue, Sunset Amber, Emerald Green, Electric Purple, Ruby Crimson, etc.) or tap **Fine-Tune Custom Color** to pick any custom shade.
-4. Tap **Save**. Your chosen color will instantly update the garage card stripe, sidebar/menu dots, timeline visit badges, and timeline spend trajectory chart.
+### How do I change a vehicle's color?
 
-### How do I scan paper repair orders or receipts?
-On iOS:
-1. Tap the **"+" (Add)** button in the navigation bar or floating action button.
-2. Select **"Scan Invoice Document"**.
-3. Use the document camera to photograph all pages of your receipt. The app automatically detects edges, straightens angles, and creates a multi-page PDF.
-4. The on-device OCR engine extracts the service date, facility name, VIN, mileage, line items, and total cost for your review.
+1. Open **Home**.
+2. On your vehicle's card, click or tap the colored dot next to its name. You can also right-click or long-press the card and choose **Change Vehicle Color...**.
+3. Choose one of the preset colors, or choose **Fine-Tune Custom Color** to pick any color.
+4. Choose **Save**. The vehicle's card, sidebar dot, timeline badges and charts will use the new color.
 
-### How does Batch Folder Import work on Mac?
-If you have accumulated years of PDF invoices in a folder:
-1. In the **Timeline** toolbar menu on macOS, select **"Import Folder (Batch Invoices)..."**.
-2. Select your folder of repair PDFs.
-3. The app extracts invoice text on-device, matches invoices to cars in your garage where it can, filters dealership noise, and flags potential duplicates. Invoice summaries run on your device.
-4. Review the itemized summary and tap **Import** to merge the records into your ledger.
+### How do I scan a paper receipt?
 
-### Do invoice summaries leave my device?
-No. In this release, invoice text recognition and summaries run on your device. If Apple Intelligence is not available, the app uses a rules-based summary. See the [Privacy Policy](privacy.html) for details.
+On iPhone and iPad:
+
+1. Open **Timeline** and tap the **+** button.
+2. Choose **Scan Receipt with Camera**.
+3. Photograph each page of your receipt. The app will find the edges, straighten the pages and save them as one PDF.
+4. Check the details the app read from the receipt, such as the date, provider, mileage, services and total, then save the visit.
+
+### How do I import a folder of invoices?
+
+If you have years of PDF invoices in a folder:
+
+1. Open **Timeline**, choose the **+** button, then choose **Import Folder (Batch Invoices)...**.
+2. Choose your folder of PDFs.
+3. The app will read each invoice on your device, match it to a vehicle in your garage where it can, and flag invoices you may already have.
+4. Check each record and choose which ones to keep, then choose **Import**.
+
+### Do my invoices leave my device?
+
+No. In this release, the app will read your invoices and write their summaries on your device. If Apple Intelligence isn't available, you get a rules-based summary. You can read the details in the [privacy policy](privacy.html).
 
 ### What does Ask send, and how do I turn it off?
-Ask is off until you turn it on. When you ask a question, the app sends your question to Apple Private Cloud Compute, along with each saved visit's date, cost, odometer reading, service provider and service descriptions for the vehicles you have selected, plus spending totals. It does not send VINs, license plates, notes, receipts or files. The developer does not receive the question or the answer. Turn Ask off at any time in **Settings > Ask**.
 
-Ask needs iOS 27 and an internet connection, and Apple sets a daily limit on questions.
+Ask is off until you turn it on. When you ask a question, the app will send your question to Apple Private Cloud Compute, with each saved visit's date, cost, odometer reading, service provider and service descriptions for the vehicles you have selected, plus your spending totals. Ask does not send your VINs, license plates, notes, receipts or files. The developer does not receive your question or the answer. You can turn Ask off at any time in **Settings > Ask**.
 
-### Where is my data stored? Can I access or back it up manually?
-Yes. Your data is never trapped in a proprietary database:
-- Your service ledger is stored as a clean, human-readable JSON file (`CarServiceData.json`).
-- All attached invoices are stored as standard, uncompressed PDF files in the `Receipts/` subfolder.
-- In macOS **Settings**, you can view the active storage path or choose a custom folder location on your drive.
+You need iOS 27 or macOS 27 and an internet connection to use Ask. Apple sets a daily limit on questions.
 
----
+### Where are my records stored, and can I back them up?
 
-## Direct Inquiries
+Yes, you can back them up. Your records are a readable JSON file (`CarServiceData.json`), and your receipts are standard PDF files in the `Receipts` folder. In **Settings**, you can see where they are stored, or choose **Choose Custom Storage Folder…** to keep them in a folder you pick.
 
-For additional questions or support inquiries, please open a ticket on GitHub:  
-<https://github.com/amolkarnik/car-service-dashboard/issues>
+## Other questions
+
+If your question isn't answered here, you can [open an issue on GitHub](https://github.com/amolkarnik/car-service-dashboard/issues).
