@@ -17,10 +17,12 @@ Ask is off until you turn it on. Before you turn it on, you can see what Ask wil
 When you ask a question, the app will send these to Apple's PCC service:
 
 - your question;
-- for the vehicles you have selected, each saved visit's date, cost, odometer reading, service provider and service descriptions;
+- today's date, and your device's time zone and calendar (for example America/New_York and Gregorian);
+- the name of each vehicle you have selected;
+- for those vehicles, each saved visit's date, cost, odometer reading, service provider and service descriptions;
 - your spending totals for those vehicles.
 
-Ask does not send your VINs, license plates, notes, receipts, invoice files or file names. Your provider and service text is sent as you saved it, so anything you typed into those fields is included.
+Ask does not send the VIN or license plate saved for a vehicle, or your notes, receipts, invoice files or file names. Your vehicle names and your provider and service text are sent as you saved them. If you typed a VIN, a plate number or anything else into a vehicle name, provider or service, it is sent as part of that text.
 
 Each question you ask is sent on its own. Your earlier questions and answers are not sent again. Apple processes PCC requests under Apple's privacy and security practices. The developer does not receive your question or the answer.
 
